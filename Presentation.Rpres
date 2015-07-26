@@ -1,0 +1,44 @@
+Presentation
+========================================================
+author: Wenkai Liang  
+date: July 2015
+
+
+Description
+========================================================
+
+This app shows the following data:
+
+- gas
+- electricity
+- water
+
+for the years 2012 to 2014.
+
+
+Details
+========================================================
+Excel sheet records the data displayed by the different meters.
+
+Demonstrate the weekly difference.
+
+Further more, a formula is applied to compute an estimate price (expressed in
+EUR) for the week's consumption.
+
+Data
+========================================================
+
+Here are the first 10 lines of the Excel file (for the columns which interest
+me, the ones I show in the barplot):
+
+```{r data, echo=FALSE}
+data <- read.csv("data.csv", sep=",", header=T)
+subset(data, select=c(Date,PriceGas,PriceElec,PriceWater))[1:10, ]
+```
+Plot
+========================================================
+```{r plot, echo=FALSE}
+plot(data)
+```
+
+It is interesting to write a presentation in RPre!
