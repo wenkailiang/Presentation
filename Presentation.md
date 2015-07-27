@@ -48,5 +48,10 @@ me, the ones I show in the barplot):
 Plot
 ========================================================
 ![plot of chunk plot](Presentation-figure/plot-1.png) 
+Summary
+========================================================
+Electricity > Gas > Water
 
-It is interesting to write a presentation in RPre!
+Gas cost has large fluctutations over the year.
+
+From 2012 to 2014, the average consumption is increasing.
